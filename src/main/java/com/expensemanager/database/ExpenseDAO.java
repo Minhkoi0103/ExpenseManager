@@ -155,7 +155,6 @@ public class ExpenseDAO {
         return 0; // Trả về 0 nếu không có dữ liệu
     }
 
-
     public static int getExpenseCountByDate(String date) {
         String sql = "SELECT COUNT(*) AS count FROM expenses WHERE date = ?";
 

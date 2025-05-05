@@ -5,6 +5,7 @@ import com.expensemanager.database.DataBaseManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +21,7 @@ public class ExpenseManagerApplication extends Application {
             DataBaseManager.initializeDatabase();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/expensemanager/HomeExpenseManagerView.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("/com/expensemanager/iconlogo.png")));
             stage.setTitle("Quản lý chi tiêu");
             stage.setMinWidth(800);
             stage.setMinHeight(600);

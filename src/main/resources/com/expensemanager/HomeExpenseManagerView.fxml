@@ -21,7 +21,6 @@
                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
             </columnResizePolicy>
             <columns>
-                <!--<TableColumn fx:id="idColumn" text="STT"/>-->
                 <TableColumn id="colDate" fx:id="dateColumn" text="Ngày"/>
                 <TableColumn id="colAmount" fx:id="amountColumn" prefWidth="68.79998779296875" text="Số tiền"/>
                 <TableColumn id="colCategory" fx:id="categoryColumn" prefWidth="72.79998779296875" text="Lý do"/>
